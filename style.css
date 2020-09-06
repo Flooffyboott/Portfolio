@@ -32,8 +32,8 @@ a:active {
     width: 100%;
     max-width: 1276px;
     margin: 0 auto;
-    /* padding-left: 16px;
-    padding-right: 16px; */
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 
@@ -77,11 +77,108 @@ Columns
 
 .columns {
     width: 100%;
-    display: flex;    
 }
 
-.columns.is-v-centered {
-    align-items: center;
+@media screen and (min-width: 900px) {
+    .columns {
+        display: flex;
+    }
+
+    .column.is-1 {
+        width: 8.333333333333333%;
+    }
+    
+    .column.is-2 {
+        width: 16.66666666666667%;
+    }
+    
+    .column.is-3 {
+        width: 25%;
+    }
+    
+    .column.is-4 {
+        width: 33.33333333333333%;
+    }
+    
+    .column.is-5 {
+        width: 41.66666666666667%;
+    }
+    
+    .column.is-6 {
+        width: 50%;
+    }
+    
+    .column.is-7 {
+        width: 58.33333333333333%;
+    }
+    
+    .column.is-8 {
+        width: 66.66666666666666%;
+    }
+    
+    .column.is-9 {
+        width: 75%;
+    }
+    
+    .column.is-10 {
+        width: 83.33333333333333%;
+    }
+    
+    .column.is-11 {
+        width: 91.66666666666666%;
+    }
+    
+    .column.is-12 {
+        width: 100%;
+    }
+    
+    .column.is-offset-1 {
+        margin-left: 8.333333333333333%;
+    }
+    
+    .column.is-offset-2 {
+        margin-left: 16.66666666666667%;
+    }
+    
+    .column.is-offset-3 {
+        margin-left: 25%;
+    }
+    
+    .column.is-offset-4 {
+        margin-left: 33.33333333333333%;
+    }
+    
+    .column.is-offset-5 {
+        margin-left: 41.66666666666667%;
+    }
+    
+    .column.is-offset-6 {
+        margin-left: 50%;
+    }
+    
+    .column.is-offset-7 {
+        margin-left: 58.33333333333333%;
+    }
+    
+    .column.is-offset-8 {
+        margin-left: 66.66666666666666%;
+    }
+    
+    .column.is-offset-9 {
+        margin-left: 75%;
+    }
+    
+    .column.is-offset-10 {
+        margin-left: 83.33333333333333%;
+    }
+    
+    .column.is-offset-11 {
+        margin-left: 91.66666666666666%;
+    }
+
+    .columns.is-v-centered {
+        align-items: center;
+    }
 }
 
 .column.is-h-centered {
@@ -91,98 +188,6 @@ Columns
 .column {
     box-sizing: border-box;
     padding: 16px;
-}
-
-.column.is-1 {
-    width: 8.333333333333333%;
-}
-
-.column.is-2 {
-    width: 16.66666666666667%;
-}
-
-.column.is-3 {
-    width: 25%;
-}
-
-.column.is-4 {
-    width: 33.33333333333333%;
-}
-
-.column.is-5 {
-    width: 41.66666666666667%;
-}
-
-.column.is-6 {
-    width: 50%;
-}
-
-.column.is-7 {
-    width: 58.33333333333333%;
-}
-
-.column.is-8 {
-    width: 66.66666666666666%;
-}
-
-.column.is-9 {
-    width: 75%;
-}
-
-.column.is-10 {
-    width: 83.33333333333333%;
-}
-
-.column.is-11 {
-    width: 91.66666666666666%;
-}
-
-.column.is-12 {
-    width: 100%;
-}
-
-.column.is-offset-1 {
-    margin-left: 8.333333333333333%;
-}
-
-.column.is-offset-2 {
-    margin-left: 16.66666666666667%;
-}
-
-.column.is-offset-3 {
-    margin-left: 25%;
-}
-
-.column.is-offset-4 {
-    margin-left: 33.33333333333333%;
-}
-
-.column.is-offset-5 {
-    margin-left: 41.66666666666667%;
-}
-
-.column.is-offset-6 {
-    margin-left: 50%;
-}
-
-.column.is-offset-7 {
-    margin-left: 58.33333333333333%;
-}
-
-.column.is-offset-8 {
-    margin-left: 66.66666666666666%;
-}
-
-.column.is-offset-9 {
-    margin-left: 75%;
-}
-
-.column.is-offset-10 {
-    margin-left: 83.33333333333333%;
-}
-
-.column.is-offset-11 {
-    margin-left: 91.66666666666666%;
 }
 
 .is-blue {
@@ -242,6 +247,13 @@ Sections
     width: 100%;
 }
 
+@media screen and (max-width: 900px) {
+    .section.section--header .columns {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
 .section.section--header .section-footer {
     display: flex;
     align-items: center;
@@ -288,14 +300,23 @@ Sections
 }
 
 .section.section--header .portrait {
-    width: 404px;
-    height: 404px;
+    position: relative;
+    max-width: 404px;
+    width: 100%;
     background-color: #eeeeee;
     border-radius: 50%;
     overflow: hidden;
 }
 
+.section.section--header .portrait:after {
+    display: block;
+    content: '';
+    padding-bottom: 100%;
+    width: 100%;
+}
+
 .section.section--header .portrait img {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
