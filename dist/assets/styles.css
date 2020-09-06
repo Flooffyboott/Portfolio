@@ -1,0 +1,129 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 16px; }
+
+img {
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
+a:link {
+  color: black; }
+
+a:visited {
+  color: black; }
+
+a:active {
+  color: black; }
+
+.container {
+  width: 100%;
+  max-width: 1276px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px; }
+
+.button {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: #0161F3;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 25px;
+  transition: ease-in-out all .2s;
+  cursor: pointer; }
+  .button:hover {
+    background-color: black; }
+  .button:focus {
+    outline: 0; }
+  .button.is-white {
+    color: #0161F3;
+    background-color: white; }
+
+.section {
+  display: flex; }
+
+.section.is-centered {
+  align-items: center; }
+
+.section.has-background-blue {
+  background-color: #0161F3;
+  color: white; }
+
+.section.is-small {
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
+.section.is-large {
+  padding-top: 180px;
+  padding-bottom: 180px; }
+
+.section .section-title {
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: 700;
+  padding-bottom: 32px; }
+
+.section .section-subtitle {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.875rem;
+  padding-bottom: 115px; }

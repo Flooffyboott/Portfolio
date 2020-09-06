@@ -1,0 +1,29 @@
+.button {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: $color-primary;
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 25px;
+    transition: ease-in-out all .2s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: black;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &.is-white {
+        color: $color-primary;
+        background-color: white;
+    }
+}

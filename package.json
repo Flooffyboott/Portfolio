@@ -1,0 +1,25 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "node-sass": "^4.14.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "build": "npx node-sass scss/styles.scss dist/assets/styles.css",
+        "watch": "npx node-sass scss/styles.scss dist/assets/styles.css --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Flooffyboott/Portfolio.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Flooffyboott/Portfolio/issues"
+    },
+    "homepage": "https://github.com/Flooffyboott/Portfolio#readme"
+}
