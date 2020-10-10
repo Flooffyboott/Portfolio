@@ -127,3 +127,316 @@ a:active {
   font-weight: 300;
   font-size: 1.875rem;
   padding-bottom: 115px; }
+
+.navigation-title {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 80px; }
+  .navigation-title a {
+    font-size: 1.875rem;
+    font-weight: 300;
+    text-transform: uppercase; }
+
+.sticky-navigation {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  opacity: 95%; }
+  .sticky-navigation .navigation-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top: 41px;
+    margin-bottom: 41px; }
+  .sticky-navigation .list-item a {
+    margin-left: 32px;
+    display: block;
+    text-align: center;
+    transition: ease-in-out all .2s;
+    -moz-transition: ease-in-out all .2s;
+    -webkit-transition: ease-in-out all .2s; }
+    .sticky-navigation .list-item a:hover {
+      color: #0161F3; }
+
+.columns {
+  width: 100%;
+  display: flex; }
+
+.column.is-1 {
+  width: 8.333333333333333%; }
+
+.column.is-2 {
+  width: 16.66666666666667%; }
+
+.column.is-3 {
+  width: 25%; }
+
+.column.is-4 {
+  width: 33.33333333333333%; }
+
+.column.is-5 {
+  width: 41.66666666666667%; }
+
+.column.is-6 {
+  width: 50%; }
+
+.column.is-7 {
+  width: 58.33333333333333%; }
+
+.column.is-8 {
+  width: 66.66666666666666%; }
+
+.column.is-9 {
+  width: 75%; }
+
+.column.is-10 {
+  width: 83.33333333333333%; }
+
+.column.is-11 {
+  width: 91.66666666666666%; }
+
+.column.is-12 {
+  width: 100%; }
+
+.column.is-offset-1 {
+  margin-left: 8.333333333333333%; }
+
+.column.is-offset-2 {
+  margin-left: 16.66666666666667%; }
+
+.column.is-offset-3 {
+  margin-left: 25%; }
+
+.column.is-offset-4 {
+  margin-left: 33.33333333333333%; }
+
+.column.is-offset-5 {
+  margin-left: 41.66666666666667%; }
+
+.column.is-offset-6 {
+  margin-left: 50%; }
+
+.column.is-offset-7 {
+  margin-left: 58.33333333333333%; }
+
+.column.is-offset-8 {
+  margin-left: 66.66666666666666%; }
+
+.column.is-offset-9 {
+  margin-left: 75%; }
+
+.column.is-offset-10 {
+  margin-left: 83.33333333333333%; }
+
+.column.is-offset-11 {
+  margin-left: 91.66666666666666%; }
+
+.columns.is-v-centered {
+  align-items: center; }
+
+.column.is-h-centered {
+  text-align: center; }
+
+.column {
+  box-sizing: border-box;
+  padding: 16px; }
+
+.is-blue {
+  color: #0161F3; }
+
+.section {
+  /********************
+    Styles Homepage
+    *********************/
+  /********************
+    Styles Branding
+    *********************/
+  /******************
+    Styles Webprojects
+    *******************/
+  /*******************
+    Styles Impressum
+    *******************/ }
+  .section.section--header {
+    flex-direction: column;
+    min-height: 100vh; }
+    .section.section--header .section-title {
+      text-align: left;
+      padding-bottom: 0px; }
+    .section.section--header .section-subtitle {
+      text-align: left;
+      font-size: 3.75rem;
+      font-weight: 700;
+      padding-bottom: 64px; }
+    .section.section--header .section-body {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      width: 100%; }
+    .section.section--header .portrait {
+      position: relative;
+      max-width: 404px;
+      width: 100%;
+      background-color: #eeeeee;
+      border-radius: 50%;
+      overflow: hidden; }
+      .section.section--header .portrait:after {
+        display: block;
+        content: '';
+        padding-bottom: 100%;
+        width: 100%; }
+      .section.section--header .portrait img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top; }
+    .section.section--header .section-footer {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 148px;
+      color: white;
+      background-color: #0161F3; }
+    .section.section--header .contact-list {
+      display: flex;
+      justify-content: flex-end; }
+      .section.section--header .contact-list .list-item {
+        display: flex;
+        align-items: center; }
+      .section.section--header .contact-list .list-item:not(:last-child) {
+        margin-right: 32px; }
+      .section.section--header .contact-list .item-icon {
+        width: 32px;
+        height: auto;
+        margin-right: 8px; }
+      .section.section--header .contact-list .item-label {
+        font-weight: 300; }
+  .section.section--contact .contact-data {
+    width: auto; }
+  .section.section--skills .skills-content {
+    font-size: 2.1875rem;
+    font-weight: 300;
+    text-align: center; }
+  .section.section--skills .skills-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 180px;
+    height: 180px;
+    background-color: black;
+    border-radius: 50%; }
+    .section.section--skills .skills-icon .icon {
+      width: 75px;
+      height: auto; }
+  .section.section--projects .project-preview {
+    height: 404px;
+    width: 404px;
+    overflow: hidden; }
+    .section.section--projects .project-preview .preview-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .section.section--projects .project-title {
+    font-size: 2.8125rem;
+    font-weight: 700;
+    color: #0161F3; }
+  .section.section--projects .project-description {
+    line-height: 1.5;
+    padding-top: 16px;
+    padding-bottom: 32px; }
+  .section.section--footer {
+    background-color: black; }
+    .section.section--footer img {
+      width: 48px;
+      height: auto; }
+    .section.section--footer .footer-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0161F3;
+      padding-bottom: 24px; }
+    .section.section--footer .footer-content {
+      color: white;
+      font-weight: 300;
+      padding-bottom: 8px; }
+    .section.section--footer .footer-impressum {
+      font-size: 0.875rem;
+      font-weight: 300;
+      text-align: center;
+      color: white;
+      padding-top: 24px; }
+      .section.section--footer .footer-impressum a {
+        text-decoration: underline; }
+        .section.section--footer .footer-impressum a:link {
+          color: white; }
+        .section.section--footer .footer-impressum a:visited {
+          color: white; }
+        .section.section--footer .footer-impressum a:active {
+          color: white; }
+  .section .section-body-projects {
+    display: flex;
+    align-items: center;
+    width: 100%; }
+  .section .project-title {
+    color: #0161F3;
+    font-size: 1.875rem;
+    font-weight: 700;
+    padding-bottom: 32px; }
+    .section .project-title.has-padding-large {
+      padding-top: 88px; }
+  .section .project-description-projects {
+    line-height: 1.5; }
+  .section .showcase.is-small {
+    width: 513px;
+    height: 513px; }
+  .section .showcase.is-big {
+    width: 840px;
+    height: 600px;
+    padding-bottom: 88px;
+    padding-top: 32px;
+    margin-right: auto;
+    margin-left: auto; }
+  .section .section-title.is-small {
+    font-size: 2.8125rem;
+    padding-bottom: 88px;
+    padding-top: 124px; }
+  .section.section--header-projects .section-body {
+    flex-grow: 1; }
+  .section.section--header-projects .section-title {
+    padding-top: 224px; }
+  .section.section--eke img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .section.section--bana {
+    padding-bottom: 180px; }
+    .section.section--bana img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .section.section--portfolio {
+    padding-bottom: 180px; }
+    .section.section--portfolio img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .section.section--impressum h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    padding-bottom: 32px;
+    color: #0161F3; }
+  .section.section--impressum h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    padding-bottom: 32px; }
+  .section.section--impressum p {
+    line-height: 1.5;
+    padding-bottom: 32px; }
+  .section.section--impressum a {
+    text-decoration: underline; }
+    .section.section--impressum a:link {
+      color: blue; }
+    .section.section--impressum a:visited {
+      color: blue; }

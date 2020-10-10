@@ -1,0 +1,42 @@
+.navigation-title {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 80px;
+
+    a {
+        font-size: 1.875rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+.sticky-navigation {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    opacity: 95%;
+
+    .navigation-list {
+        display: flex;
+        margin-left: auto;
+        margin-right: 80px;
+        margin-top: 41px;
+        margin-bottom: 41px;
+    }
+
+    .list-item {
+        a {
+            margin-left: 32px;
+            display: block;
+            text-align: center;
+            transition: ease-in-out all .2s; 
+            -moz-transition: ease-in-out all .2s;
+            -webkit-transition: ease-in-out all .2s;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}

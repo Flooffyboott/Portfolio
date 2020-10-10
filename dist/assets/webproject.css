@@ -201,7 +201,7 @@ Sections
     display: flex;
 }
 
-.section .section-body {
+.section .section-body-projects {
     display: flex;
     align-items: center;
     width: 100%;
@@ -276,11 +276,11 @@ Sections
     padding-top: 124px;
 }
 
-.section.section--header .section-body {
+.section.section--header-projects .section-body-projects {
     flex-grow: 1;
 }
 
-.section.section--header .section-title {
+.section.section--header-projects .section-title {
     padding-top: 224px;
 }
 

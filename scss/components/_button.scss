@@ -3,7 +3,7 @@
     font-size: 1rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    color: white;
+    color: $color-white;
     background-color: $color-primary;
     border: none;
     padding-top: 16px;
@@ -15,7 +15,7 @@
     cursor: pointer;
 
     &:hover {
-        background-color: black;
+        background-color: $color-black;
     }
 
     &:focus {
@@ -24,6 +24,6 @@
 
     &.is-white {
         color: $color-primary;
-        background-color: white;
+        background-color: $color-white;
     }
 }
