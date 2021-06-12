@@ -3,15 +3,24 @@
     margin-bottom: 32px;
     margin-left: 80px;
 
+    @include tablet-down {
+        margin-left: 50px;
+    }
+
     a {
         font-size: 1.875rem;
         font-weight: 300;
         text-transform: uppercase;
+
+        @include tablet-down {
+            font-size: 1.5rem;
+        }
     }
 }
 
 .sticky-navigation {
     position: fixed;
+    z-index: 1;
     width: 100%;
     display: flex;
     background-color: white;
@@ -23,6 +32,11 @@
         margin-right: 80px;
         margin-top: 41px;
         margin-bottom: 41px;
+
+        @include tablet-down {
+            text-align: right;
+            margin-right: 40px;
+        }
     }
 
     .list-item {
@@ -38,5 +52,32 @@
                 color: $color-primary;
             }
         }
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 99;
+    display: none;
+
+    @include tablet-down {
+        &.is-active {
+            display: block;
+        }
+    }
+}
+
+.mobile-menu-trigger {
+    width: 48px;
+    height: 48px;
+    background-color: lawngreen;
+
+    @include tablet-up {
+        display: none;
     }
 }

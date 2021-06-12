@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="assets/scripts.js" type="text/javascript"></script>
 </head>
 
 <body>
 
-
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="navigation-list">
+            <li class="list-item"><a href="#">Home</a></li>
+            <li class="list-item"><a href="#skills">Skills</a></li>
+            <li class="list-item"><a href="#projects">Projects</a></li>
+            <li class="list-item"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-close" onclick="closeMobileMenu()">X</div>
+    </div>
     <nav class="sticky-navigation">
         <div class="navigation-title">
             <a href="#">anton mai</a>
+        </div>
+        <div class="mobile-menu-trigger" onclick="toggleMobileMenu()">
+
         </div>
         <ul class="navigation-list">
             <li class="list-item"><a href="#">Home</a></li>
@@ -29,13 +41,13 @@
         <div class="section-body">
             <div class="container">
                 <div class="columns is-v-centered">
-                    <div class="column column--text is-6">
+                    <div class="column column--text is-7-desktop">
                         <p class="section-title">Hi! Ich bin Anton Mai,</p>
                         <p class="section-subtitle is-blue">Junior Webdesigner.</p>
                         <a href="#skills"><button class="button">Mehr erfahren</button></a>
                         <button class="button is-white">Download Lebenslauf</button>
                     </div>
-                    <div class="column column--image is-4 is-offset-2">
+                    <div class="column column--image is-4 is-offset-1-desktop">
                         <div class="portrait">
                             <img src="assets/img/Abs_fotos_bearbeitet_2-4-bearbeitet-2.jpg">
                         </div>
@@ -66,13 +78,13 @@
             <div class="section-title">SKILLS</div>
             <div class="section-subtitle">Dies sind meine Kompetenzen</div>
             <div class="columns">
-                <div class="column is-2 is-offset-3">
+                <div class="column is-2-widescreen is-offset-3-widescreen is-3-desktop is-offset-2-desktop">
                     <div class="skills-content">
                         <div class="skills-icon"><img src="assets/img/orion_code.svg" class="icon"></div>
                         <p>Webdesign</p>
                     </div>
                 </div>
-                <div class="column is-2 is-offset-2">
+                <div class="column is-2-widescreen is-offset-2-widescreen is-3-desktop is-offset-2-desktop">
                     <div class="skills-content">
                         <div class="skills-icon"><img src="assets/img/orion_pen.svg" class="icon"></div>
                         <p>Branding</p>
@@ -89,22 +101,22 @@
             <div class="section-title">PROJECTS</div>
             <div class="section-subtitle">Kundenprojekte und Workflowbeschreibung</div>
             <div class="columns is-v-centered">
-                <div class="column is-4">
+                <div class="column is-4-desktop is-offset-1-desktop is-4-tablet is-12-mobile">
                     <div class="project-preview"><img src="assets/img/eke_mockup_1.jpg" class="preview-img"></div>
                 </div>
-                <div class="column is-5 is-offset-1">
+                <div class="column is-6-desktop is-offset-1 is-6-tablet is-12-mobile">
                     <p class="project-title">Branding Projekte</p>
                     <p class="project-description">Hier findest du eine Auswahl an Projekten an denen ich gearbeitet habe sowie den dazugehörigen Workflow</p>
                     <a href="branding.html"><button class="button">Mehr erfahren</button></a>
                 </div>
             </div>
             <div class="columns is-v-centered">
-                <div class="column is-5 is-offset-2">
+                <div class="column is-6-desktop">
                     <p class="project-title">Webdesign Projekt</p>
                     <p class="project-description">Hier findest du eine genauere Beschreibung und den Workflow meiner Webseite.</p>
                     <a href="webproject.html"><button class="button">Mehr erfahren</button></a>
                 </div>
-                <div class="column is-4 is-offset-1">
+                <div class="column is-4-dekstop is-offset-1 is-4-tablet">
                     <div class="project-preview"><img src="assets/img/banakongo_mockup_1.jpg" alt="" class="preview-img"></div>
                 </div>
             </div>
@@ -114,16 +126,16 @@
     <section class="section section--footer is-small">
         <div class="container" id="contact">
             <div class="columns">
-                <div class="column is-3 is-offset-1 is-h-centered">
+                <div class="column is-3-widescreen is-offset-1-widescreen is-h-centered is-10">
                     <p class="footer-title">Noch Fragen?</p>
                     <p class="footer-content">01523 / 4723058</p>
                     <p class="footer-content">anton-mai@gmx.de</p>
                 </div>
-                <div class="column is-4 is-h-centered">
+                <div class="column is-4-widescreen is-h-centered is-10">
                     <p class="footer-title">Hier findest du mein Projekt</p>
-                    <a href="#" class="github-link"><img src="assets/img/Orion_github.svg"></a>
+                    <a href="https://github.com/Flooffyboott" class="github-link"><img src="assets/img/Orion_github.svg"></a>
                 </div>
-                <div class="column is-3 is-h-centered">
+                <div class="column is-3-widescreen is-h-centered is-10">
                     <p class="footer-title">Weitere Daten findest du hier</p>
                     <button class="button is-white">Download Lebenslauf</button>
                 </div>
