@@ -12,13 +12,17 @@
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
-                flex-direction: column;
             }
+
         }
 
         .section-title {
             text-align: left;
-            padding-bottom: 0px;
+            padding-bottom: 32px;
+
+            .tittle-blue {
+                color: $color-primary;
+            }
 
             @include widescreen-down {
                 font-size: 3.4rem;
@@ -29,27 +33,15 @@
             }
 
             @include tablet-down {
+                font-size: 2.5rem;
                 text-align: center;
-                padding-top: 128px;
+                padding-top: 56px;
             }
         }
 
-        .section-subtitle {
-            text-align: left;
-            font-size: 3.75rem;
-            font-weight: 700;
-            padding-bottom: 64px;
-
-            @include widescreen-down {
-                font-size: 3.4rem;
-            }
-
-            @include desktop-down {
-                font-size: 2.75rem;
-            }
-
+        .button.is-white {
             @include tablet-down {
-                text-align: center;
+                display: none;
             }
         }
 
@@ -69,7 +61,7 @@
             overflow: hidden;
 
             @include tablet-down {
-                max-width: 304px;
+                max-width: 256px;
             }
 
             &:after {
@@ -97,7 +89,7 @@
             background-color: $color-primary;
 
             @include tablet-down {
-                height: 124px;
+                height: 84px;
             }
         }
 
@@ -108,6 +100,10 @@
             .list-item {
                 display: flex;
                 align-items: center;
+
+                @include tablet-down {
+                    font-size: 0.85rem;
+                }
             }
 
             .list-item:not(:last-child) {
@@ -118,6 +114,10 @@
                 width: 32px;
                 height: auto;
                 margin-right: 8px;
+
+                @include tablet-down {
+                    width: 24px;
+                }
             }
 
             .item-label {
