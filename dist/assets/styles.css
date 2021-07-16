@@ -115,12 +115,19 @@ a:active {
 .section.is-large {
   padding-top: 180px;
   padding-bottom: 180px; }
+  @media screen and (max-width: 767px) {
+    .section.is-large {
+      padding-top: 90px;
+      padding-bottom: 90px; } }
 
 .section .section-title {
   text-align: center;
   font-size: 3.75rem;
   font-weight: 700;
   padding-bottom: 32px; }
+  @media screen and (max-width: 767px) {
+    .section .section-title {
+      font-size: 3.25rem; } }
 
 .section .section-subtitle {
   text-align: center;
@@ -129,7 +136,8 @@ a:active {
   padding-bottom: 115px; }
   @media screen and (max-width: 767px) {
     .section .section-subtitle {
-      padding-bottom: 95px; } }
+      padding-bottom: 56px;
+      font-size: 1.5rem; } }
 
 .navigation-title {
   margin-top: 26px;
@@ -880,7 +888,6 @@ a:active {
       @media screen and (max-width: 767px) {
         .section.section--header .section-title {
           font-size: 2.5rem;
-          text-align: center;
           padding-top: 56px; } }
     @media screen and (max-width: 767px) {
       .section.section--header .button.is-white {
@@ -920,7 +927,8 @@ a:active {
       background-color: #0161F3; }
       @media screen and (max-width: 767px) {
         .section.section--header .section-footer {
-          height: 84px; } }
+          height: 84px;
+          display: none; } }
     .section.section--header .contact-list {
       display: flex;
       justify-content: flex-end; }
@@ -947,6 +955,9 @@ a:active {
     font-size: 2.1875rem;
     font-weight: 300;
     text-align: center; }
+    @media screen and (max-width: 767px) {
+      .section.section--skills .skills-content {
+        padding-bottom: 8px; } }
   .section.section--skills .skills-icon {
     display: flex;
     align-items: center;
@@ -961,7 +972,8 @@ a:active {
     position: relative; }
     @media screen and (max-width: 767px) {
       .section.section--skills .skills-icon {
-        max-width: 140px; } }
+        max-width: 140px;
+        margin-bottom: 16px; } }
     .section.section--skills .skills-icon:after {
       content: '';
       display: block;
@@ -980,12 +992,18 @@ a:active {
       display: block;
       padding-bottom: 100%;
       width: 100%; }
+      @media screen and (max-width: 767px) {
+        .section.section--projects .project-preview:after {
+          padding-bottom: 50%; } }
     .section.section--projects .project-preview .preview-img {
       position: absolute;
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: top; }
+      @media screen and (max-width: 767px) {
+        .section.section--projects .project-preview .preview-img {
+          object-position: center; } }
   .section.section--projects .project-title {
     font-size: 2.625rem;
     font-weight: 700;
@@ -993,10 +1011,21 @@ a:active {
     @media screen and (max-width: 1023px) {
       .section.section--projects .project-title {
         font-size: 2.5rem; } }
+    @media screen and (max-width: 767px) {
+      .section.section--projects .project-title {
+        font-size: 2.25rem; } }
   .section.section--projects .project-description {
     line-height: 1.5;
     padding-top: 16px;
     padding-bottom: 32px; }
+    @media screen and (max-width: 767px) {
+      .section.section--projects .project-description {
+        padding-top: 0px; } }
+  @media screen and (max-width: 767px) {
+    .section.section--projects .column.is-6-desktop {
+      text-align: center; }
+      .section.section--projects .column.is-6-desktop .project-title, .section.section--projects .column.is-6-desktop .project-description {
+        text-align: left; } }
   .section.section--footer {
     background-color: black; }
     @media screen and (max-width: 1215px) {
@@ -1040,6 +1069,9 @@ a:active {
     font-size: 1.875rem;
     font-weight: 700;
     padding-bottom: 32px; }
+    @media screen and (max-width: 767px) {
+      .section .project-title {
+        padding-bottom: 16px; } }
     .section .project-title.has-padding-large {
       padding-top: 88px; }
   .section .project-description-projects {
