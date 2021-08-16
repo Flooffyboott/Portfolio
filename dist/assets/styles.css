@@ -986,7 +986,9 @@ a:active {
     position: relative;
     max-width: 404px;
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto; }
     .section.section--projects .project-preview:after {
       content: '';
       display: block;
@@ -1072,24 +1074,50 @@ a:active {
     @media screen and (max-width: 767px) {
       .section .project-title {
         padding-bottom: 16px; } }
+    @media screen and (min-width: 767px) {
+      .section .project-title {
+        font-size: 2.25rem; } }
     .section .project-title.has-padding-large {
       padding-top: 88px; }
+      @media screen and (max-width: 767px) {
+        .section .project-title.has-padding-large {
+          padding-top: 56px; } }
   .section .project-description-projects {
     line-height: 1.5; }
-  .section .showcase.is-small {
-    width: 513px;
-    height: 513px; }
-  .section .showcase.is-big {
-    width: 840px;
-    height: 600px;
-    padding-bottom: 88px;
-    padding-top: 32px;
-    margin-right: auto;
-    margin-left: auto; }
+    @media screen and (max-width: 767px) {
+      .section .project-description-projects {
+        text-align: left; } }
+  .section .showcase {
+    margin-left: auto;
+    margin-right: auto; }
+    .section .showcase.is-small {
+      max-width: 513px;
+      height: 513px; }
+      @media screen and (max-width: 767px) {
+        .section .showcase.is-small {
+          max-width: 404px;
+          height: 168px; } }
+    .section .showcase.is-big {
+      max-width: 840px;
+      height: 600px;
+      padding-bottom: 88px;
+      padding-top: 32px;
+      margin-right: auto;
+      margin-left: auto; }
+      @media screen and (max-width: 767px) {
+        .section .showcase.is-big {
+          max-width: 404px;
+          height: 168px;
+          padding-top: 16px;
+          padding-bottom: 56px; } }
   .section .section-title.is-small {
     font-size: 2.8125rem;
     padding-bottom: 88px;
     padding-top: 124px; }
+    @media screen and (max-width: 767px) {
+      .section .section-title.is-small {
+        padding-top: 36px;
+        padding-bottom: 56px; } }
   .section.section--header-projects .section-body {
     flex-grow: 1; }
   .section.section--header-projects .section-title {
@@ -1106,10 +1134,16 @@ a:active {
       object-fit: cover; }
   .section.section--portfolio {
     padding-bottom: 180px; }
+    @media screen and (max-width: 767px) {
+      .section.section--portfolio {
+        padding-bottom: 90px; } }
     .section.section--portfolio img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+    @media screen and (max-width: 767px) {
+      .section.section--portfolio .project-title {
+        text-align: left; } }
   .section.section--impressum h1 {
     font-size: 3.75rem;
     font-weight: 700;
