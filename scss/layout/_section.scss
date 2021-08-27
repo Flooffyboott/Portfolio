@@ -339,32 +339,34 @@
         }
     }
 
-    .showcase {
-        margin-left: auto;
-        margin-right: auto;
-        &.is-small {
-            max-width: 513px;
-            height: 513px;
-            
-            @include tablet-down {
-                max-width: 404px;
-                height: 168px;
-            }
-        }
-
-        &.is-big {
-            max-width: 840px;
-            height: 600px;
-            padding-bottom: 88px;
-            padding-top: 32px;
-            margin-right: auto;
+    .section.section--eke,.section.section--bana {
+        .showcase {
             margin-left: auto;
+            margin-right: auto;
+            &.is-small {
+                max-width: 513px;
+                height: 513px;
+            
+                @include tablet-down {
+                    max-width: 404px;
+                    height: 168px;
+                }
+            }
 
-            @include tablet-down {
-                max-width:404px ;
-                height: 168px;
-                padding-top: 16px;
-                padding-bottom: 56px;
+            &.is-big {
+                max-width: 840px;
+                height: 600px;
+                padding-bottom: 88px;
+                padding-top: 32px;
+                margin-right: auto;
+                margin-left: auto;
+
+                @include desktop-down {
+                    max-width:404px ;
+                    height: 168px;
+                    padding-top: 16px;
+                    padding-bottom: 56px;
+                }
             }
         }
     }
@@ -421,15 +423,53 @@
             padding-bottom: 90px;
         }
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .showcase.is-big {
+            padding-bottom: 88px;
+            padding-top: 32px;
+            margin-right: auto;
+            margin-left: auto;
+
+            @include desktop-down {
+                padding-top: 16px;
+                padding-bottom: 56px;
+            }
         }
 
         .project-title {
             @include tablet-down {
                 text-align: left;
+            }
+        }
+
+        .showcase.is-small {
+            position: relative;
+            max-width: 404px;
+            width: 100%;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            
+            &:after {
+                content: '';
+                display: block;
+                padding-bottom: 100%;
+                width: 100%;
+
+                @include tablet-down {
+                    padding-bottom: 50%;
+                }
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+
+                @include tablet-down {
+                    object-position: center;
+                }
             }
         }
     }
